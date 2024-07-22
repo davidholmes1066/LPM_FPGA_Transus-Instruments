@@ -1,0 +1,8 @@
+#Start recording tcl command: 7/22/2024 14:28:07
+#Project Location: C:/Users/david/Documents/Github/LPM_FPGA_Transus-Instruments/LPM_design; Project name: LPM_design
+prj_create -name "LPM_design" -impl "LPM_design" -dev iCE40UP5K-SG48I -performance "High-Performance_1.2V" -synthesis "synplify"
+prj_save 
+prj_add_source "C:/Users/david/Documents/Github/LPM_FPGA_Transus-Instruments/LPM_design/source/LPM_design/AGC_mod.vhd"
+prj_remove_source "C:/Users/david/Documents/Github/LPM_FPGA_Transus-Instruments/LPM_design/source/LPM_design/AGC_mod.vhd"
+prj_add_source "C:/Users/david/Documents/Github/LPM_FPGA_Transus-Instruments/LPM_design/source/LPM_design/AGC_mod.vhd"
+#Stop recording: 7/22/2024 16:46:57

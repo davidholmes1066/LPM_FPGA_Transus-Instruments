@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildStatus>
+    <Strategy name="Strategy1">
+        <Milestone name="Export" build_result="0" build_time="1721654855">
+            <Task name="Bitgen" build_result="0" update_result="2" update_time="1721654855"/>
+            <Task name="IBIS" build_result="0" update_result="2" update_time="1721654855"/>
+            <Task name="TimingSimFileVlg" build_result="0" update_result="2" update_time="1721654855"/>
+        </Milestone>
+        <Milestone name="Map" build_result="0" build_time="1721654855">
+            <Task name="Map" build_result="0" update_result="2" update_time="1721654855"/>
+            <Task name="MapTrace" build_result="0" update_result="2" update_time="1721654855"/>
+        </Milestone>
+        <Milestone name="PAR" build_result="0" build_time="1721654855">
+            <Task name="PAR" build_result="0" update_result="2" update_time="1721654855"/>
+            <Task name="PARTrace" build_result="0" update_result="2" update_time="1721654855"/>
+            <Task name="IOTiming" build_result="0" update_result="2" update_time="1721654855"/>
+        </Milestone>
+        <Milestone name="Synthesis" build_result="0" build_time="1721654879">
+            <Task name="Synplify_Synthesis" build_result="0" update_result="2" update_time="1721654879"/>
+            <Task name="SynTrace" build_result="0" update_result="2" update_time="1721654879"/>
+            <Task name="SynVerilogSimFile" build_result="0" update_result="2" update_time="1721654879"/>
+            <Task name="LSE_Compile" build_result="0" update_result="2" update_time="1721654879"/>
+        </Milestone>
+    </Strategy>
+</BuildStatus>
