@@ -17,12 +17,14 @@ use ieee.numeric_std.all;
 
 --ENTITY
 entity AGC_mod is
-	port 	(	clk_i: in std_logic;															--INPUTS
+				--INPUTS
+	port 	(	clk_i: in std_logic;
 				rst_i: in std_logic;
 				trig_i: in std_logic;
 				AGC_set_val_i: in std_logic_vector(7 downto 0);
-			
-				AQ_DAC_CS_o: out std_logic;													--OUTPUTS
+				
+				--OUTPUTS
+				AQ_DAC_CS_o: out std_logic;
 				AQ_DAC_SCK_o: out std_logic;
 				AQ_DAC_SDO_o: out std_logic);
 end AGC_mod;
