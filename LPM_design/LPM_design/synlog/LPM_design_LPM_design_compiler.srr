@@ -1,0 +1,213 @@
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03LR-SP1-2
+Install: C:\lscc\radiant\2023.2\synpbase
+OS: Windows 10 or later
+Hostname: MS_DHOLMES
+
+Implementation : LPM_design
+Synopsys HDL Compiler, Version comp202303synp1, Build 300R, Built Mar  7 2024 08:13:58, @
+
+@N|Running in 64-bit mode
+###########################################################[
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03LR-SP1-2
+Install: C:\lscc\radiant\2023.2\synpbase
+OS: Windows 10 or later
+Hostname: MS_DHOLMES
+
+Implementation : LPM_design
+Synopsys VHDL Compiler, Version comp202303synp1, Build 300R, Built Mar  7 2024 08:13:58, @
+
+@N|Running in 64-bit mode
+@N:"C:\Users\david\Documents\Github\LPM_FPGA_Transus-Instruments\LPM_design\source\LPM_design\AGC_mod.vhd":18:7:18:13|Top entity is set to AGC_mod.
+@N: CD140 :	| Using the VHDL 1993 Standard for file 'C:\lscc\radiant\2023.2\ip\pmi\pmi_iCE40UP.vhd'.
+@N: CD140 :	| Using the VHDL 1993 Standard for file 'C:\Users\david\Documents\Github\LPM_FPGA_Transus-Instruments\LPM_design\source\LPM_design\AGC_mod.vhd'.
+@N: CD140 :	| Using the VHDL 1993 Standard for file 'C:\lscc\radiant\2023.2\cae_library\synthesis\vhdl\iCE40UP.vhd'.
+VHDL syntax check successful!
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 88MB peak: 89MB)
+
+
+Process completed successfully.
+# Tue Jul 23 09:46:05 2024
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03LR-SP1-2
+Install: C:\lscc\radiant\2023.2\synpbase
+OS: Windows 10 or later
+Hostname: MS_DHOLMES
+
+Implementation : LPM_design
+Synopsys Verilog Compiler, Version comp202303synp1, Build 300R, Built Mar  7 2024 08:13:58, @
+
+@N|Running in 64-bit mode
+@I::"C:\lscc\radiant\2023.2\synpbase\lib\generic\ice40up.v" (library work)
+@I::"C:\lscc\radiant\2023.2\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\lscc\radiant\2023.2\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\lscc\radiant\2023.2\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"C:\lscc\radiant\2023.2\ip\pmi\pmi_iCE40UP.v" (library work)
+@I:"C:\lscc\radiant\2023.2\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.2\ip\pmi\pmi_addsub.v" (library work)
+@I:"C:\lscc\radiant\2023.2\ip\pmi\pmi_addsub.v":"C:\lscc\radiant\2023.2\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v":313:13:313:25|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v":333:13:333:24|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.2\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.2\ip\pmi\pmi_add.v" (library work)
+@I:"C:\lscc\radiant\2023.2\ip\pmi\pmi_add.v":"C:\lscc\radiant\2023.2\ip\pmi\../common/adder/rtl\lscc_adder.v" (library work)
+@I:"C:\lscc\radiant\2023.2\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.2\ip\pmi\pmi_complex_mult.v" (library work)
+@I:"C:\lscc\radiant\2023.2\ip\pmi\pmi_complex_mult.v":"C:\lscc\radiant\2023.2\ip\pmi\../common/complex_mult/rtl\lscc_complex_mult.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\pmi_complex_mult.v":92:11:92:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\pmi_complex_mult.v":101:11:101:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.2\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.2\ip\pmi\pmi_counter.v" (library work)
+@I:"C:\lscc\radiant\2023.2\ip\pmi\pmi_counter.v":"C:\lscc\radiant\2023.2\ip\pmi\../common/counter/rtl\lscc_cntr.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../common/counter/rtl\lscc_cntr.v":129:13:129:25|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../common/counter/rtl\lscc_cntr.v":143:13:143:24|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.2\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.2\ip\pmi\pmi_fifo.v" (library work)
+@I:"C:\lscc\radiant\2023.2\ip\pmi\pmi_fifo.v":"C:\lscc\radiant\2023.2\ip\pmi\../avant/fifo/rtl\lscc_fifo.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/fifo/rtl\lscc_fifo.v":3260:17:3260:29|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/fifo/rtl\lscc_fifo.v":3267:17:3267:28|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.2\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.2\ip\pmi\pmi_fifo_dc.v" (library work)
+@I:"C:\lscc\radiant\2023.2\ip\pmi\pmi_fifo_dc.v":"C:\lscc\radiant\2023.2\ip\pmi\../avant/fifo_dc/rtl\lscc_fifo_dc.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/fifo_dc/rtl\lscc_fifo_dc.v":4898:25:4898:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/fifo_dc/rtl\lscc_fifo_dc.v":4902:25:4902:36|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/fifo_dc/rtl\lscc_fifo_dc.v":4933:29:4933:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/fifo_dc/rtl\lscc_fifo_dc.v":4937:29:4937:40|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.2\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.2\ip\pmi\pmi_mac.v" (library work)
+@I:"C:\lscc\radiant\2023.2\ip\pmi\pmi_mac.v":"C:\lscc\radiant\2023.2\ip\pmi\../common/mult_accumulate/rtl\lscc_mult_accumulate.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\pmi_mac.v":94:11:94:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\pmi_mac.v":109:11:109:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.2\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.2\ip\pmi\pmi_multaddsubsum.v" (library work)
+@I:"C:\lscc\radiant\2023.2\ip\pmi\pmi_multaddsubsum.v":"C:\lscc\radiant\2023.2\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v":210:13:210:25|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v":227:13:227:24|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\pmi_multaddsubsum.v":84:11:84:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\pmi_multaddsubsum.v":93:11:93:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.2\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.2\ip\pmi\pmi_multaddsub.v" (library work)
+@I:"C:\lscc\radiant\2023.2\ip\pmi\pmi_multaddsub.v":"C:\lscc\radiant\2023.2\ip\pmi\../common/mult_add_sub/rtl\lscc_mult_add_sub.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\pmi_multaddsub.v":91:11:91:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\pmi_multaddsub.v":100:11:100:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.2\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.2\ip\pmi\pmi_mult.v" (library work)
+@I:"C:\lscc\radiant\2023.2\ip\pmi\pmi_mult.v":"C:\lscc\radiant\2023.2\ip\pmi\../common/multiplier/rtl\lscc_multiplier.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\pmi_mult.v":87:11:87:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\pmi_mult.v":96:11:96:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.2\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.2\ip\pmi\pmi_ram_dp.v" (library work)
+@I:"C:\lscc\radiant\2023.2\ip\pmi\pmi_ram_dp.v":"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp/rtl\lscc_ram_dp.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp/rtl\lscc_ram_dp.v":1060:25:1060:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp/rtl\lscc_ram_dp.v":1064:25:1064:36|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp/rtl\lscc_ram_dp.v":1095:29:1095:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dp/rtl\lscc_ram_dp.v":1099:29:1099:40|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.2\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.2\ip\pmi\pmi_ram_dq.v" (library work)
+@I:"C:\lscc\radiant\2023.2\ip\pmi\pmi_ram_dq.v":"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dq/rtl\lscc_ram_dq.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dq/rtl\lscc_ram_dq.v":1485:25:1485:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/ram_dq/rtl\lscc_ram_dq.v":1491:25:1491:36|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.2\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.2\ip\pmi\pmi_rom.v" (library work)
+@I:"C:\lscc\radiant\2023.2\ip\pmi\pmi_rom.v":"C:\lscc\radiant\2023.2\ip\pmi\../avant/rom/rtl\lscc_rom.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/rom/rtl\lscc_rom.v":970:25:970:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\../avant/rom/rtl\lscc_rom.v":976:25:976:36|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.2\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.2\ip\pmi\pmi_sub.v" (library work)
+@I:"C:\lscc\radiant\2023.2\ip\pmi\pmi_sub.v":"C:\lscc\radiant\2023.2\ip\pmi\../common/subtractor/rtl\lscc_subtractor.v" (library work)
+@I:"C:\lscc\radiant\2023.2\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.2\ip\pmi\pmi_ram_dp_be.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\pmi_ram_dp_be.v":146:11:146:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\pmi_ram_dp_be.v":155:11:155:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.2\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.2\ip\pmi\pmi_ram_dq_be.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2023.2\ip\pmi\pmi_ram_dq_be.v":87:11:87:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2023.2\ip\pmi\pmi_ram_dq_be.v":95:11:95:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2023.2\ip\pmi\pmi_iCE40UP.v":"C:\lscc\radiant\2023.2\ip\pmi\pmi_dsp.v" (library work)
+Verilog syntax check successful!
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 111MB)
+
+
+Process completed successfully.
+# Tue Jul 23 09:46:06 2024
+
+###########################################################]
+###########################################################[
+@N:"C:\Users\david\Documents\Github\LPM_FPGA_Transus-Instruments\LPM_design\source\LPM_design\AGC_mod.vhd":18:7:18:13|Top entity is set to AGC_mod.
+@N: CD140 :	| Using the VHDL 1993 Standard for file 'C:\lscc\radiant\2023.2\ip\pmi\pmi_iCE40UP.vhd'.
+@N: CD140 :	| Using the VHDL 1993 Standard for file 'C:\Users\david\Documents\Github\LPM_FPGA_Transus-Instruments\LPM_design\source\LPM_design\AGC_mod.vhd'.
+@N: CD140 :	| Using the VHDL 1993 Standard for file 'C:\lscc\radiant\2023.2\cae_library\synthesis\vhdl\iCE40UP.vhd'.
+VHDL syntax check successful!
+@N: CD630 :"C:\Users\david\Documents\Github\LPM_FPGA_Transus-Instruments\LPM_design\source\LPM_design\AGC_mod.vhd":18:7:18:13|Synthesizing work.agc_mod.behavioral.
+@N: CD233 :"C:\Users\david\Documents\Github\LPM_FPGA_Transus-Instruments\LPM_design\source\LPM_design\AGC_mod.vhd":32:13:32:14|Using sequential encoding for type t_state.
+@N: CD604 :"C:\Users\david\Documents\Github\LPM_FPGA_Transus-Instruments\LPM_design\source\LPM_design\AGC_mod.vhd":60:2:60:15|OTHERS clause is not synthesized.
+Post processing for work.agc_mod.behavioral
+Running optimization stage 1 on AGC_mod .......
+@A: CL282 :"C:\Users\david\Documents\Github\LPM_FPGA_Transus-Instruments\LPM_design\source\LPM_design\AGC_mod.vhd":44:0:44:1|Feedback mux created for signal edge_cnt[2:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\david\Documents\Github\LPM_FPGA_Transus-Instruments\LPM_design\source\LPM_design\AGC_mod.vhd":44:0:44:1|Feedback mux created for signal AGC_set_val[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+Finished optimization stage 1 on AGC_mod (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+Running optimization stage 2 on AGC_mod .......
+Finished optimization stage 2 on AGC_mod (CPU Time 0h:00m:00s, Memory Used current: 90MB peak: 92MB)
+
+For a summary of runtime per design unit, please see file:
+==========================================================
+@L: C:\Users\david\Documents\Github\LPM_FPGA_Transus-Instruments\LPM_design\LPM_design\synwork\layer0.duruntime
+
+
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 90MB peak: 92MB)
+
+
+Process completed successfully.
+# Tue Jul 23 09:46:06 2024
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03LR-SP1-2
+Install: C:\lscc\radiant\2023.2\synpbase
+OS: Windows 10 or later
+Hostname: MS_DHOLMES
+
+Implementation : LPM_design
+Synopsys Synopsys Netlist Linker, Version comp202303synp1, Build 300R, Built Mar  7 2024 08:13:58, @
+
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 91MB peak: 91MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Jul 23 09:46:07 2024
+
+###########################################################]
+
+For a summary of runtime and memory usage for all design units, please see file:
+==========================================================
+@L: C:\Users\david\Documents\Github\LPM_FPGA_Transus-Instruments\LPM_design\LPM_design\synwork\LPM_design_LPM_design_comp.rt.csv
+
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 24MB peak: 25MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Jul 23 09:46:07 2024
+
+###########################################################]

@@ -1,0 +1,1 @@
+@W: MT420 |Found inferred clock AGC_mod|clk_i with period 5.00ns. Please declare a user-defined clock on port clk_i.

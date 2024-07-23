@@ -1,0 +1,1 @@
+@W: MT530 :"c:\users\david\documents\github\lpm_fpga_transus-instruments\lpm_design\source\lpm_design\agc_mod.vhd":44:0:44:1|Found inferred clock AGC_mod|clk_i which controls 12 sequential elements including edge_cnt[2:0]. This clock has no specified timing constraint which may adversely impact design performance. 

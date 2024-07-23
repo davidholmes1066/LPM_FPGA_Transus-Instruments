@@ -1,0 +1,1 @@
+project -fileorder "C:/lscc/radiant/2023.2/ip/pmi/pmi_iCE40UP.vhd" "C:/Users/david/Documents/Github/LPM_FPGA_Transus-Instruments/LPM_design/source/LPM_design/AGC_mod.vhd" "C:/lscc/radiant/2023.2/cae_library/synthesis/vhdl/iCE40UP.vhd" 

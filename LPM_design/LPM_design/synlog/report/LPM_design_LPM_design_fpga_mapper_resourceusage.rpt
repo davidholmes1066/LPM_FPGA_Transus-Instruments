@@ -1,0 +1,24 @@
+---------------------------------------
+Resource Usage Report for AGC_mod 
+
+Mapping to part: ice40up5ksg48i-6
+Cell usage:
+FD1P3DZ         12 uses
+VHI             1 use
+VLO             1 use
+LUT4            23 uses
+
+I/O ports: 14
+I/O primitives: 14
+IB             11 uses
+OB             3 uses
+
+I/O Register bits:                  0
+Register bits not including I/Os:   12 of 5280 (0%)
+
+@S |Mapping Summary:
+Total  LUTs: 23 (0%)
+
+Distribution of All Consumed LUTs = LUT4 
+Distribution of All Consumed LUTs 23 = 23 
+

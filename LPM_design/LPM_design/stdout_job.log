@@ -1,0 +1,97 @@
+{
+"Synplify Pro (R) Job Log" : {
+	"Date" : "09:46:13    23-Jul-2024",
+	"Working Directory" : "C:/Users/david/Documents/Github/LPM_FPGA_Transus-Instruments/LPM_design/LPM_design",
+	"Install" : "C:/lscc/radiant/2023.2/synpbase"
+},
+"hdl_info_gen" :{
+   "Start Time" : "09:46:03",
+   "Runtime" : "01s",
+   "Executable Run Time" : "00s",
+   "hdl_info_gen" : {
+      "executable" : "bin64/c_vhdl.exe",
+      "Run Directory" : "C:/Users/david/Documents/Github/LPM_FPGA_Transus-Instruments/LPM_design/LPM_design",
+      "Run State" : "Complete",
+      "Return Code" : "0",
+      "Has Errors" : "no",
+      "Run Start Time" : "09:46:03",
+      "Run Time" : "01s",
+      "Exe Run Time" : "00s",
+      "Memory Usage" : "-",
+      "Up-to-date (run skipped)" : "no"
+   }
+},
+"LPM_design" :{
+   "Start Time" : "09:46:04",
+   "Runtime" : "09s",
+   "Executable Run Time" : "08s",
+   "synthesis" : {
+      "Start Time" : "09:46:04",
+      "Runtime" : "09s",
+      "Executable Run Time" : "08s",
+      "compile" : {
+         "Start Time" : "09:46:04",
+         "Runtime" : "06s",
+         "Executable Run Time" : "05s",
+         "compile_flow" : {
+            "Start Time" : "09:46:04",
+            "Runtime" : "04s",
+            "Executable Run Time" : "03s",
+            "compiler" : {
+               "executable" : "bin64/c_hdl.exe",
+               "Run Directory" : "C:/Users/david/Documents/Github/LPM_FPGA_Transus-Instruments/LPM_design/LPM_design",
+               "Run State" : "Complete",
+               "Return Code" : "0",
+               "Has Errors" : "no",
+               "Run Start Time" : "09:46:04",
+               "Run Time" : "04s",
+               "Exe Run Time" : "03s",
+               "Memory Usage" : "-",
+               "Up-to-date (run skipped)" : "no"
+            },
+            "multi_srs_gen" : {
+               "executable" : "bin64/syn_nfilter.exe",
+               "Run Directory" : "C:/Users/david/Documents/Github/LPM_FPGA_Transus-Instruments/LPM_design/LPM_design",
+               "Run State" : "Complete",
+               "Return Code" : "0",
+               "Has Errors" : "no",
+               "Run Start Time" : "09:46:08",
+               "Run Time" : "00s",
+               "Exe Run Time" : "00s",
+               "Memory Usage" : "-",
+               "Up-to-date (run skipped)" : "no"
+            }
+         },
+         "premap" : {
+            "executable" : "bin64/m_generic.exe",
+            "Run Directory" : "C:/Users/david/Documents/Github/LPM_FPGA_Transus-Instruments/LPM_design/LPM_design",
+            "Run State" : "Complete",
+            "Return Code" : "1",
+            "Has Errors" : "no",
+            "Run Start Time" : "09:46:08",
+            "Run Time" : "02s",
+            "Exe Run Time" : "02s",
+            "Memory Usage" : "-",
+            "Up-to-date (run skipped)" : "no"
+         }
+      },
+      "map" : {
+         "Start Time" : "09:46:10",
+         "Runtime" : "03s",
+         "Executable Run Time" : "03s",
+         "fpga_mapper" : {
+            "executable" : "bin64/m_generic.exe",
+            "Run Directory" : "C:/Users/david/Documents/Github/LPM_FPGA_Transus-Instruments/LPM_design/LPM_design",
+            "Run State" : "Complete",
+            "Return Code" : "1",
+            "Has Errors" : "no",
+            "Run Start Time" : "09:46:10",
+            "Run Time" : "03s",
+            "Exe Run Time" : "03s",
+            "Memory Usage" : "-",
+            "Up-to-date (run skipped)" : "no"
+         }
+      }
+   }
+}
+}

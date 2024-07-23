@@ -1,0 +1,427 @@
+//
+// Written by Synplify Pro 
+// Product Version "U-2023.03LR-SP1-2"
+// Program "Synplify Pro", Mapper "map202303lat, Build 248R"
+// Tue Jul 23 09:46:12 2024
+//
+// Source file index table:
+// Object locations will have the form <file>:<line>
+// file 0 "\c:\lscc\radiant\2023.2\synpbase\lib\vhd\std.vhd "
+// file 1 "\c:\lscc\radiant\2023.2\synpbase\lib\vhd\snps_haps_pkg.vhd "
+// file 2 "\c:\lscc\radiant\2023.2\synpbase\lib\vhd\std1164.vhd "
+// file 3 "\c:\lscc\radiant\2023.2\synpbase\lib\vhd\numeric.vhd "
+// file 4 "\c:\lscc\radiant\2023.2\synpbase\lib\vhd\umr_capim.vhd "
+// file 5 "\c:\lscc\radiant\2023.2\synpbase\lib\vhd\arith.vhd "
+// file 6 "\c:\lscc\radiant\2023.2\synpbase\lib\vhd\unsigned.vhd "
+// file 7 "\c:\lscc\radiant\2023.2\synpbase\lib\vhd\hyperents.vhd "
+// file 8 "\c:\lscc\radiant\2023.2\ip\pmi\pmi_ice40up.vhd "
+// file 9 "\c:\users\david\documents\github\lpm_fpga_transus-instruments\lpm_design\source\lpm_design\agc_mod.vhd "
+// file 10 "\c:\lscc\radiant\2023.2\cae_library\synthesis\vhdl\ice40up.vhd "
+// file 11 "\c:\lscc\radiant\2023.2\synpbase\lib\nlconst.dat "
+
+`timescale 100 ps/100 ps
+module AGC_mod (
+  clk_i,
+  rst_i,
+  trig_i,
+  AGC_set_val_i,
+  AQ_DAC_CS_o,
+  AQ_DAC_SCK_o,
+  AQ_DAC_SDO_o
+)
+;
+input clk_i ;
+input rst_i ;
+input trig_i ;
+input [7:0] AGC_set_val_i ;
+output AQ_DAC_CS_o ;
+output AQ_DAC_SCK_o ;
+output AQ_DAC_SDO_o ;
+wire clk_i ;
+wire rst_i ;
+wire trig_i ;
+wire AQ_DAC_CS_o ;
+wire AQ_DAC_SCK_o ;
+wire AQ_DAC_SDO_o ;
+wire [0:0] state;
+wire [2:1] edge_cnt;
+wire [7:0] AGC_set_val;
+wire [7:0] AGC_set_val_i_c;
+wire [2:0] \FSM.edge_cnt_4 ;
+wire [0:0] state_i;
+wire [7:0] AGC_set_val_RNO;
+wire VCC ;
+wire GND ;
+wire CO0 ;
+wire clk_i_c ;
+wire rst_i_c ;
+wire trig_i_c ;
+wire AQ_DAC_SCK_o_c ;
+wire AQ_DAC_SDO_o_c ;
+wire CO1 ;
+wire N_28 ;
+wire N_31 ;
+wire N_29 ;
+wire N_30 ;
+wire N_26 ;
+wire N_27 ;
+wire rst_i_c_i ;
+wire N_5_i ;
+// @9:44
+  FD1P3DZ \state_Z[0]  (
+	.Q(state[0]),
+	.D(N_5_i),
+	.CK(clk_i_c),
+	.CD(rst_i_c),
+	.SP(VCC)
+);
+// @9:44
+  FD1P3DZ \AGC_set_val_Z[7]  (
+	.Q(AGC_set_val[7]),
+	.D(AGC_set_val_RNO[7]),
+	.CK(clk_i_c),
+	.CD(GND),
+	.SP(state_i[0])
+);
+// @9:44
+  FD1P3DZ \AGC_set_val_Z[6]  (
+	.Q(AGC_set_val[6]),
+	.D(AGC_set_val_RNO[6]),
+	.CK(clk_i_c),
+	.CD(GND),
+	.SP(state_i[0])
+);
+// @9:44
+  FD1P3DZ \AGC_set_val_Z[5]  (
+	.Q(AGC_set_val[5]),
+	.D(AGC_set_val_RNO[5]),
+	.CK(clk_i_c),
+	.CD(GND),
+	.SP(state_i[0])
+);
+// @9:44
+  FD1P3DZ \AGC_set_val_Z[4]  (
+	.Q(AGC_set_val[4]),
+	.D(AGC_set_val_RNO[4]),
+	.CK(clk_i_c),
+	.CD(GND),
+	.SP(state_i[0])
+);
+// @9:44
+  FD1P3DZ \AGC_set_val_Z[3]  (
+	.Q(AGC_set_val[3]),
+	.D(AGC_set_val_RNO[3]),
+	.CK(clk_i_c),
+	.CD(GND),
+	.SP(state_i[0])
+);
+// @9:44
+  FD1P3DZ \AGC_set_val_Z[2]  (
+	.Q(AGC_set_val[2]),
+	.D(AGC_set_val_RNO[2]),
+	.CK(clk_i_c),
+	.CD(GND),
+	.SP(state_i[0])
+);
+// @9:44
+  FD1P3DZ \AGC_set_val_Z[1]  (
+	.Q(AGC_set_val[1]),
+	.D(AGC_set_val_RNO[1]),
+	.CK(clk_i_c),
+	.CD(GND),
+	.SP(state_i[0])
+);
+// @9:44
+  FD1P3DZ \AGC_set_val_Z[0]  (
+	.Q(AGC_set_val[0]),
+	.D(AGC_set_val_RNO[0]),
+	.CK(clk_i_c),
+	.CD(GND),
+	.SP(state_i[0])
+);
+// @9:44
+  FD1P3DZ \edge_cnt_Z[2]  (
+	.Q(edge_cnt[2]),
+	.D(\FSM.edge_cnt_4 [2]),
+	.CK(clk_i_c),
+	.CD(GND),
+	.SP(rst_i_c_i)
+);
+// @9:44
+  FD1P3DZ \edge_cnt_Z[1]  (
+	.Q(edge_cnt[1]),
+	.D(\FSM.edge_cnt_4 [1]),
+	.CK(clk_i_c),
+	.CD(GND),
+	.SP(rst_i_c_i)
+);
+// @9:44
+  FD1P3DZ \edge_cnt[0]  (
+	.Q(CO0),
+	.D(\FSM.edge_cnt_4 [0]),
+	.CK(clk_i_c),
+	.CD(GND),
+	.SP(rst_i_c_i)
+);
+  LUT4 \edge_cnt_RNO[2]  (
+	.A(CO0),
+	.B(edge_cnt[1]),
+	.C(edge_cnt[2]),
+	.D(state[0]),
+	.Z(\FSM.edge_cnt_4 [2])
+);
+defparam \edge_cnt_RNO[2] .INIT="0xF800";
+  LUT4 AQ_DAC_SDO_o_obuf_RNO_1 (
+	.A(N_29),
+	.B(N_30),
+	.C(edge_cnt[1]),
+	.D(GND),
+	.Z(N_31)
+);
+defparam AQ_DAC_SDO_o_obuf_RNO_1.INIT="0xCACA";
+  LUT4 AQ_DAC_SDO_o_obuf_RNO_0 (
+	.A(N_26),
+	.B(N_27),
+	.C(edge_cnt[1]),
+	.D(GND),
+	.Z(N_28)
+);
+defparam AQ_DAC_SDO_o_obuf_RNO_0.INIT="0xCACA";
+  LUT4 rst_i_ibuf_RNI6UQ8 (
+	.A(rst_i_c),
+	.B(GND),
+	.C(GND),
+	.D(GND),
+	.Z(rst_i_c_i)
+);
+defparam rst_i_ibuf_RNI6UQ8.INIT="0x5555";
+  LUT4 \state_RNI9V4D[0]  (
+	.A(state[0]),
+	.B(GND),
+	.C(GND),
+	.D(GND),
+	.Z(state_i[0])
+);
+defparam \state_RNI9V4D[0] .INIT="0x5555";
+  LUT4 AQ_DAC_SCK_o_obuf_RNO (
+	.A(clk_i_c),
+	.B(state[0]),
+	.C(GND),
+	.D(GND),
+	.Z(AQ_DAC_SCK_o_c)
+);
+defparam AQ_DAC_SCK_o_obuf_RNO.INIT="0x4444";
+  LUT4 \state_RNO_0[0]  (
+	.A(CO0),
+	.B(edge_cnt[1]),
+	.C(GND),
+	.D(GND),
+	.Z(CO1)
+);
+defparam \state_RNO_0[0] .INIT="0x8888";
+  LUT4 AQ_DAC_SDO_o_obuf_RNO_2 (
+	.A(AGC_set_val[0]),
+	.B(AGC_set_val[4]),
+	.C(edge_cnt[2]),
+	.D(GND),
+	.Z(N_26)
+);
+defparam AQ_DAC_SDO_o_obuf_RNO_2.INIT="0xCACA";
+  LUT4 AQ_DAC_SDO_o_obuf_RNO_3 (
+	.A(AGC_set_val[2]),
+	.B(AGC_set_val[6]),
+	.C(edge_cnt[2]),
+	.D(GND),
+	.Z(N_27)
+);
+defparam AQ_DAC_SDO_o_obuf_RNO_3.INIT="0xCACA";
+  LUT4 AQ_DAC_SDO_o_obuf_RNO_4 (
+	.A(AGC_set_val[1]),
+	.B(AGC_set_val[5]),
+	.C(edge_cnt[2]),
+	.D(GND),
+	.Z(N_29)
+);
+defparam AQ_DAC_SDO_o_obuf_RNO_4.INIT="0xCACA";
+  LUT4 AQ_DAC_SDO_o_obuf_RNO_5 (
+	.A(AGC_set_val[3]),
+	.B(AGC_set_val[7]),
+	.C(edge_cnt[2]),
+	.D(GND),
+	.Z(N_30)
+);
+defparam AQ_DAC_SDO_o_obuf_RNO_5.INIT="0xCACA";
+  LUT4 \AGC_set_val_RNO_cZ[0]  (
+	.A(AGC_set_val[0]),
+	.B(AGC_set_val_i_c[0]),
+	.C(rst_i_c),
+	.D(trig_i_c),
+	.Z(AGC_set_val_RNO[0])
+);
+defparam \AGC_set_val_RNO_cZ[0] .INIT="0xACAA";
+  LUT4 \AGC_set_val_RNO_cZ[1]  (
+	.A(AGC_set_val[1]),
+	.B(AGC_set_val_i_c[1]),
+	.C(rst_i_c),
+	.D(trig_i_c),
+	.Z(AGC_set_val_RNO[1])
+);
+defparam \AGC_set_val_RNO_cZ[1] .INIT="0xACAA";
+  LUT4 \AGC_set_val_RNO_cZ[2]  (
+	.A(AGC_set_val[2]),
+	.B(AGC_set_val_i_c[2]),
+	.C(rst_i_c),
+	.D(trig_i_c),
+	.Z(AGC_set_val_RNO[2])
+);
+defparam \AGC_set_val_RNO_cZ[2] .INIT="0xACAA";
+  LUT4 \AGC_set_val_RNO_cZ[3]  (
+	.A(AGC_set_val[3]),
+	.B(AGC_set_val_i_c[3]),
+	.C(rst_i_c),
+	.D(trig_i_c),
+	.Z(AGC_set_val_RNO[3])
+);
+defparam \AGC_set_val_RNO_cZ[3] .INIT="0xACAA";
+  LUT4 \AGC_set_val_RNO_cZ[4]  (
+	.A(AGC_set_val[4]),
+	.B(AGC_set_val_i_c[4]),
+	.C(rst_i_c),
+	.D(trig_i_c),
+	.Z(AGC_set_val_RNO[4])
+);
+defparam \AGC_set_val_RNO_cZ[4] .INIT="0xACAA";
+  LUT4 \AGC_set_val_RNO_cZ[5]  (
+	.A(AGC_set_val[5]),
+	.B(AGC_set_val_i_c[5]),
+	.C(rst_i_c),
+	.D(trig_i_c),
+	.Z(AGC_set_val_RNO[5])
+);
+defparam \AGC_set_val_RNO_cZ[5] .INIT="0xACAA";
+  LUT4 \AGC_set_val_RNO_cZ[6]  (
+	.A(AGC_set_val[6]),
+	.B(AGC_set_val_i_c[6]),
+	.C(rst_i_c),
+	.D(trig_i_c),
+	.Z(AGC_set_val_RNO[6])
+);
+defparam \AGC_set_val_RNO_cZ[6] .INIT="0xACAA";
+  LUT4 \AGC_set_val_RNO_cZ[7]  (
+	.A(AGC_set_val[7]),
+	.B(AGC_set_val_i_c[7]),
+	.C(rst_i_c),
+	.D(trig_i_c),
+	.Z(AGC_set_val_RNO[7])
+);
+defparam \AGC_set_val_RNO_cZ[7] .INIT="0xACAA";
+  LUT4 \edge_cnt_RNO[0]  (
+	.A(CO0),
+	.B(edge_cnt[1]),
+	.C(edge_cnt[2]),
+	.D(state[0]),
+	.Z(\FSM.edge_cnt_4 [0])
+);
+defparam \edge_cnt_RNO[0] .INIT="0xD500";
+  LUT4 \edge_cnt_RNO[1]  (
+	.A(CO0),
+	.B(edge_cnt[1]),
+	.C(edge_cnt[2]),
+	.D(state[0]),
+	.Z(\FSM.edge_cnt_4 [1])
+);
+defparam \edge_cnt_RNO[1] .INIT="0xE600";
+  LUT4 \state_RNO[0]  (
+	.A(CO1),
+	.B(edge_cnt[2]),
+	.C(state[0]),
+	.D(trig_i_c),
+	.Z(N_5_i)
+);
+defparam \state_RNO[0] .INIT="0x7F70";
+  LUT4 AQ_DAC_SDO_o_obuf_RNO (
+	.A(CO0),
+	.B(N_28),
+	.C(N_31),
+	.D(state[0]),
+	.Z(AQ_DAC_SDO_o_c)
+);
+defparam AQ_DAC_SDO_o_obuf_RNO.INIT="0xE400";
+// @9:19
+  IB clk_i_ibuf (
+	.I(clk_i),
+	.O(clk_i_c)
+);
+// @9:20
+  IB rst_i_ibuf (
+	.I(rst_i),
+	.O(rst_i_c)
+);
+// @9:21
+  IB trig_i_ibuf (
+	.I(trig_i),
+	.O(trig_i_c)
+);
+// @9:22
+  IB \AGC_set_val_i_ibuf[0]  (
+	.I(AGC_set_val_i[0]),
+	.O(AGC_set_val_i_c[0])
+);
+// @9:22
+  IB \AGC_set_val_i_ibuf[1]  (
+	.I(AGC_set_val_i[1]),
+	.O(AGC_set_val_i_c[1])
+);
+// @9:22
+  IB \AGC_set_val_i_ibuf[2]  (
+	.I(AGC_set_val_i[2]),
+	.O(AGC_set_val_i_c[2])
+);
+// @9:22
+  IB \AGC_set_val_i_ibuf[3]  (
+	.I(AGC_set_val_i[3]),
+	.O(AGC_set_val_i_c[3])
+);
+// @9:22
+  IB \AGC_set_val_i_ibuf[4]  (
+	.I(AGC_set_val_i[4]),
+	.O(AGC_set_val_i_c[4])
+);
+// @9:22
+  IB \AGC_set_val_i_ibuf[5]  (
+	.I(AGC_set_val_i[5]),
+	.O(AGC_set_val_i_c[5])
+);
+// @9:22
+  IB \AGC_set_val_i_ibuf[6]  (
+	.I(AGC_set_val_i[6]),
+	.O(AGC_set_val_i_c[6])
+);
+// @9:22
+  IB \AGC_set_val_i_ibuf[7]  (
+	.I(AGC_set_val_i[7]),
+	.O(AGC_set_val_i_c[7])
+);
+// @9:24
+  OB AQ_DAC_CS_o_obuf (
+	.I(state_i[0]),
+	.O(AQ_DAC_CS_o)
+);
+// @9:25
+  OB AQ_DAC_SCK_o_obuf (
+	.I(AQ_DAC_SCK_o_c),
+	.O(AQ_DAC_SCK_o)
+);
+// @9:26
+  OB AQ_DAC_SDO_o_obuf (
+	.I(AQ_DAC_SDO_o_c),
+	.O(AQ_DAC_SDO_o)
+);
+  VLO GND_cZ (
+	.Z(GND)
+);
+  VHI VCC_cZ (
+	.Z(VCC)
+);
+endmodule /* AGC_mod */
+

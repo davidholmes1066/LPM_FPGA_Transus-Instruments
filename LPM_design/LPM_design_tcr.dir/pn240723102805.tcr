@@ -1,0 +1,5 @@
+#Start recording tcl command: 7/23/2024 08:36:15
+#Project Location: C:/Users/david/Documents/Github/LPM_FPGA_Transus-Instruments/LPM_design; Project name: LPM_design
+prj_open "C:/Users/david/Documents/Github/LPM_FPGA_Transus-Instruments/LPM_design/LPM_design.rdf"
+prj_run Synthesis -impl LPM_design
+#Stop recording: 7/23/2024 10:28:05

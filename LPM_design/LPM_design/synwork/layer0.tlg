@@ -1,0 +1,16 @@
+@N: CD630 :"C:\Users\david\Documents\Github\LPM_FPGA_Transus-Instruments\LPM_design\source\LPM_design\AGC_mod.vhd":18:7:18:13|Synthesizing work.agc_mod.behavioral.
+@N: CD233 :"C:\Users\david\Documents\Github\LPM_FPGA_Transus-Instruments\LPM_design\source\LPM_design\AGC_mod.vhd":32:13:32:14|Using sequential encoding for type t_state.
+@N: CD604 :"C:\Users\david\Documents\Github\LPM_FPGA_Transus-Instruments\LPM_design\source\LPM_design\AGC_mod.vhd":60:2:60:15|OTHERS clause is not synthesized.
+Post processing for work.agc_mod.behavioral
+Running optimization stage 1 on AGC_mod .......
+@A: CL282 :"C:\Users\david\Documents\Github\LPM_FPGA_Transus-Instruments\LPM_design\source\LPM_design\AGC_mod.vhd":44:0:44:1|Feedback mux created for signal edge_cnt[2:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\david\Documents\Github\LPM_FPGA_Transus-Instruments\LPM_design\source\LPM_design\AGC_mod.vhd":44:0:44:1|Feedback mux created for signal AGC_set_val[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+Finished optimization stage 1 on AGC_mod (CPU Time 0h:00m:00s, Memory Used current: 91MB peak: 92MB)
+Running optimization stage 2 on AGC_mod .......
+Finished optimization stage 2 on AGC_mod (CPU Time 0h:00m:00s, Memory Used current: 90MB peak: 92MB)
+
+For a summary of runtime per design unit, please see file:
+==========================================================
+@L: C:\Users\david\Documents\Github\LPM_FPGA_Transus-Instruments\LPM_design\LPM_design\synwork\layer0.duruntime
+
+

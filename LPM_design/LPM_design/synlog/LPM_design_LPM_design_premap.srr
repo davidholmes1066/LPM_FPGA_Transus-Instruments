@@ -1,0 +1,132 @@
+# Tue Jul 23 09:46:09 2024
+
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03LR-SP1-2
+Install: C:\lscc\radiant\2023.2\synpbase
+OS: Windows 10 or later
+Hostname: MS_DHOLMES
+
+Implementation : LPM_design
+Synopsys Lattice Technology Pre-mapping, Version map202303lat, Build 248R, Built Mar  7 2024 08:35:47, @
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 126MB peak: 126MB)
+
+
+Done reading skeleton netlist (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 129MB peak: 140MB)
+
+@A: MF827 |No constraint file specified.
+@L: C:\Users\david\Documents\Github\LPM_FPGA_Transus-Instruments\LPM_design\LPM_design\LPM_design_LPM_design_scck.rpt 
+See clock summary report "C:\Users\david\Documents\Github\LPM_FPGA_Transus-Instruments\LPM_design\LPM_design\LPM_design_LPM_design_scck.rpt"
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 140MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 140MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 140MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 140MB)
+
+NConnInternalConnection caching is on
+
+Starting HSTDM IP insertion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 188MB peak: 189MB)
+
+
+Finished HSTDM IP insertion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 188MB peak: 189MB)
+
+
+Started DisTri Cleanup (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 189MB peak: 189MB)
+
+
+Finished DisTri Cleanup (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 189MB peak: 189MB)
+
+
+Starting clock optimization report phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 190MB peak: 190MB)
+
+
+Finished clock optimization report phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 190MB peak: 191MB)
+
+@N: FX1184 |Applying syn_allowed_resources blockrams=30 on top level netlist AGC_mod 
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 190MB peak: 191MB)
+
+
+
+Clock Summary
+******************
+
+          Start             Requested     Requested     Clock        Clock          Clock
+Level     Clock             Frequency     Period        Type         Group          Load 
+-----------------------------------------------------------------------------------------
+0 -       AGC_mod|clk_i     200.0 MHz     5.000         inferred     (multiple)     12   
+=========================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+                  Clock     Source          Clock Pin              Non-clock Pin     Non-clock Pin             
+Clock             Load      Pin             Seq Example            Seq Example       Comb Example              
+---------------------------------------------------------------------------------------------------------------
+AGC_mod|clk_i     12        clk_i(port)     AGC_set_val[7:0].C     -                 un4_aq_dac_sck_o.I[0](inv)
+===============================================================================================================
+
+@W: MT530 :"c:\users\david\documents\github\lpm_fpga_transus-instruments\lpm_design\source\lpm_design\agc_mod.vhd":44:0:44:1|Found inferred clock AGC_mod|clk_i which controls 12 sequential elements including edge_cnt[2:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+
+ICG Latch Removal Summary:
+Number of ICG latches removed: 0
+Number of ICG latches not removed:	0
+
+
+@S |Clock Optimization Summary
+
+
+
+#### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 12 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+=========================== Non-Gated/Non-Generated Clocks ============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
+---------------------------------------------------------------------------------------
+@KP:ckid0_0       clk_i               port                   12         edge_cnt[2:0]  
+=======================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######
+
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file C:\Users\david\Documents\Github\LPM_FPGA_Transus-Instruments\LPM_design\LPM_design\LPM_design_LPM_design.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 191MB peak: 191MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 191MB peak: 192MB)
+
+
+Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 192MB peak: 192MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 107MB peak: 193MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Jul 23 09:46:10 2024
+
+###########################################################]

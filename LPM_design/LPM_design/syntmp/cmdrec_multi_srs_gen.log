@@ -1,0 +1,7 @@
+C:\lscc\radiant\2023.2\synpbase\bin64\syn_nfilter.exe  -link  -top  AGC_mod  -multisrs  C:\Users\david\Documents\Github\LPM_FPGA_Transus-Instruments\LPM_design\LPM_design\synwork\LPM_design_LPM_design_comp.srs  -osyn  C:\Users\david\Documents\Github\LPM_FPGA_Transus-Instruments\LPM_design\LPM_design\synwork\LPM_design_LPM_design_mult.srs  -log  C:\Users\david\Documents\Github\LPM_FPGA_Transus-Instruments\LPM_design\LPM_design\synlog\LPM_design_LPM_design_multi_srs_gen.srr 
+relcom:..\..\..\..\..\..\..\..\lscc\radiant\2023.2\synpbase\bin64\syn_nfilter.exe -link -top AGC_mod -multisrs ..\synwork\LPM_design_LPM_design_comp.srs -osyn ..\synwork\LPM_design_LPM_design_mult.srs -log ..\synlog\LPM_design_LPM_design_multi_srs_gen.srr
+rc:0 success:1 runtime:0
+file:..\synwork\lpm_design_lpm_design_comp.srs|io:i|time:1721720767|size:3151|exec:0|csum:5F7F48CE13130469E8526F3F843080A8
+file:..\synwork\lpm_design_lpm_design_mult.srs|io:o|time:1721720768|size:2834|exec:0|csum:
+file:..\synlog\lpm_design_lpm_design_multi_srs_gen.srr|io:o|time:1721720768|size:1052|exec:0|csum:
+file:..\..\..\..\..\..\..\..\lscc\radiant\2023.2\synpbase\bin64\syn_nfilter.exe|io:i|time:1709958264|size:10600960|exec:1|csum:E273ECEE337FDFFCA929904899C78F7A

@@ -1,0 +1,26 @@
+###########################################################[
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03LR-SP1-2
+Install: C:\lscc\radiant\2023.2\synpbase
+OS: Windows 10 or later
+Hostname: MS_DHOLMES
+
+Implementation : LPM_design
+Synopsys Synopsys Netlist Linker, Version comp202303synp1, Build 300R, Built Mar  7 2024 08:13:58, @
+
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 90MB peak: 91MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Jul 23 09:46:08 2024
+
+###########################################################]

@@ -1,0 +1,32 @@
+#defaultlanguage:vhdl
+#OPTIONS:"|-top|AGC_mod|-prodtype|synplify_pro|-primux|-fixsmult|-infer_seqShift|-sdff_counter|-nram|-divnmod|-nostructver|-lattice|-ice|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-work_is_curlib|0|-ignore_undefined_lib|-lib|pmi|-lib|work|-lib|work|-fileorder|C:\\Users\\david\\Documents\\Github\\LPM_FPGA_Transus-Instruments\\LPM_design\\LPM_design\\syntmp\\hdlorder.tcl"
+#CUR:"C:\\lscc\\radiant\\2023.2\\synpbase\\bin64\\c_vhdl.exe":1709958258
+#CUR:"C:\\lscc\\radiant\\2023.2\\synpbase\\lib\\vhd\\location.map":1709958293
+#CUR:"C:\\lscc\\radiant\\2023.2\\synpbase\\lib\\vhd\\std.vhd":1709958293
+#CUR:"C:\\lscc\\radiant\\2023.2\\synpbase\\lib\\vhd\\snps_haps_pkg.vhd":1709958293
+#CUR:"C:\\lscc\\radiant\\2023.2\\synpbase\\lib\\vhd\\std1164.vhd":1709958293
+#CUR:"C:\\lscc\\radiant\\2023.2\\synpbase\\lib\\vhd\\numeric.vhd":1709958293
+#CUR:"C:\\lscc\\radiant\\2023.2\\synpbase\\lib\\vhd\\umr_capim.vhd":1709958293
+#CUR:"C:\\lscc\\radiant\\2023.2\\synpbase\\lib\\vhd\\arith.vhd":1709958292
+#CUR:"C:\\lscc\\radiant\\2023.2\\synpbase\\lib\\vhd\\unsigned.vhd":1709958293
+#CUR:"C:\\lscc\\radiant\\2023.2\\synpbase\\lib\\vhd\\hyperents.vhd":1709958293
+#CUR:"C:\\lscc\\radiant\\2023.2\\ip\\pmi\\pmi_iCE40UP.vhd":1648538958
+#CUR:"C:\\Users\\david\\Documents\\Github\\LPM_FPGA_Transus-Instruments\\LPM_design\\source\\LPM_design\\AGC_mod.vhd":1721720717
+#CUR:"C:\\lscc\\radiant\\2023.2\\cae_library\\synthesis\\vhdl\\iCE40UP.vhd":1534890897
+0 "C:\lscc\radiant\2023.2\ip\pmi\pmi_iCE40UP.vhd" vhdl
+1 "C:\Users\david\Documents\Github\LPM_FPGA_Transus-Instruments\LPM_design\source\LPM_design\AGC_mod.vhd" vhdl
+2 "C:\lscc\radiant\2023.2\cae_library\synthesis\vhdl\iCE40UP.vhd" vhdl
+
+# Dependency Lists (Uses list)
+0 -1
+1 -1
+2 -1
+
+# Dependency Lists (Users Of)
+0 -1
+1 -1
+2 -1
+
+# Design Unit to File Association
+arch work agc_mod behavioral 1
+module work agc_mod 1

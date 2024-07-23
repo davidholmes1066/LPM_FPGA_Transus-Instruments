@@ -1,0 +1,8 @@
+i clk_i
+m 0 0
+u 3 12
+p {p:clk_i}{t:edge_cnt[2:0].C}
+e ckid0_0 {t:edge_cnt[2:0].C} dffe
+c ckid0_0 {p:clk_i} port Unsupported/too complex instance on clock path
+l 0 0 0 0 0 0
+r 0 0 0 0 0 0 0 0

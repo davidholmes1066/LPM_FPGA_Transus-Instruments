@@ -1,0 +1,30 @@
+###########################################################[
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03LR-SP1-2
+Install: C:\lscc\radiant\2023.2\synpbase
+OS: Windows 10 or later
+Hostname: MS_DHOLMES
+
+Implementation : LPM_design
+Synopsys VHDL Compiler, Version comp202303synp1, Build 300R, Built Mar  7 2024 08:13:58, @
+
+@N|Running in 64-bit mode
+@N:"C:\Users\david\Documents\Github\LPM_FPGA_Transus-Instruments\LPM_design\source\LPM_design\AGC_mod.vhd":18:7:18:13|Top entity is set to AGC_mod.
+@N: CD140 :	| Using the VHDL 1993 Standard for file 'C:/lscc/radiant/2023.2/ip/pmi/pmi_iCE40UP.vhd'.
+@N: CD140 :	| Using the VHDL 1993 Standard for file 'C:/Users/david/Documents/Github/LPM_FPGA_Transus-Instruments/LPM_design/source/LPM_design/AGC_mod.vhd'.
+@N: CD140 :	| Using the VHDL 1993 Standard for file 'C:/lscc/radiant/2023.2/cae_library/synthesis/vhdl/iCE40UP.vhd'.
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 88MB peak: 89MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Tue Jul 23 09:46:04 2024
+
+###########################################################]

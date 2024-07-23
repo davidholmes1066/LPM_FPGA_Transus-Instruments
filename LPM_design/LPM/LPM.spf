@@ -1,0 +1,9 @@
+<RadiantSimulationProject path="." language="1" name="LPM" version="2.0" simType="ModelSim" stage="0">
+    <Source path="source/LPM_design/AGC_mod.vhd" worklib="work" include="none" langstandard="" type="VHDL"/>
+    <Source path="source/LPM_design/tb_AGC_mod.vhd" worklib="work" include="none" langstandard="" type="VHDL"/>
+    <SimLib value="pmi_work ovi_ice40up"/>
+    <GlbInc value=""/>
+    <Macro value=""/>
+    <Udo value=""/>
+    <TopModule instance="" language="VHDL" name="tb_AGC_mod"/>
+</RadiantSimulationProject>
