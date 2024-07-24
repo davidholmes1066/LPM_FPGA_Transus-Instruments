@@ -35,7 +35,7 @@ end AGC_mod;
 architecture Behavioral of AGC_mod is
 
 --SIGNALS AND STATES
-type t_state is (IDLE, S_WRITE);
+type t_state is (S_IDLE, S_WRITE, S_WAIT);
 signal state: t_state;
 signal AGC_set_val: std_logic_vector(9 downto 0);
 signal edge_cnt: std_logic_vector(3 downto 0);
@@ -50,12 +50,12 @@ AQ_DAC_SDO_o <= AGC_set_val(to_integer(unsigned(edge_cnt))) when state = S_WRITE
 
 FSM: process(clk_i, rst_i) begin
 if rst_i = '1' then
-	state <= IDLE;		
+	state <= S_IDLE;		
 elsif rising_edge(clk_i) then
 	case state is
 		
 		--IDLE STATE/ RESET VALUE
-		when IDLE =>
+		when S_IDLE =>
 			edge_cnt <= (x"9");
 			if trig_i = '1' then
 				state <= S_WRITE;
@@ -65,14 +65,20 @@ elsif rising_edge(clk_i) then
 		--SPI WRITE STATE
 		when S_WRITE =>
 			if edge_cnt = x"0" then
-				state <= IDLE;
+				state <= S_WAIT;
 			else
 				edge_cnt <= edge_cnt - 1;
 			end if;
 			
+		--WAIT FOR TRIG TO GO LOW
+		when S_WAIT =>
+			if trig_i = '0' then
+				state <= S_IDLE;
+			end if;
+			
 		--HANDLE UNKNOWN VALUES
 		when others =>
-			state <= IDLE;
+			state <= S_IDLE;
 	end case;
 end if;
 end process FSM;

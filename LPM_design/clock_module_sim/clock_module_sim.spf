@@ -1,0 +1,9 @@
+<RadiantSimulationProject stage="0" simType="ModelSim" version="2.0" path="." name="clock_module_sim" language="1">
+    <Source worklib="work" type="VHDL" langstandard="" include="none" path="source/LPM_design/clock_mod.vhd"/>
+    <Source worklib="work" type="VHDL" langstandard="" include="none" path="source/LPM_design/tb_clock_mod.vhd"/>
+    <SimLib value="pmi_work ovi_ice40up"/>
+    <GlbInc value=""/>
+    <Macro value=""/>
+    <Udo value=""/>
+    <TopModule name="tb_clk_mod" instance="" language="VHDL"/>
+</RadiantSimulationProject>

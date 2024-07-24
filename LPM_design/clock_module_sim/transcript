@@ -1,8 +1,9 @@
 # Reading pref.tcl
-# do C:/Users/david/Documents/Github/LPM_FPGA_Transus-Instruments/LPM_design/LPM/LPM.mdo
-# Loading project LPM
-# vsim -L work -L pmi_work -L ovi_ice40up -suppress vsim-7033,vsim-8630,3009,3389 tb_AGC_mod 
-# Start time: 08:34:35 on Jul 24,2024
+# do C:/Users/david/Documents/Github/LPM_FPGA_Transus-Instruments/LPM_design/clock_module_sim/clock_module_sim.mdo
+# Loading project clock_module_sim
+# Compile of tb_clock_mod.vhd was successful.
+# vsim -L work -L pmi_work -L ovi_ice40up -suppress vsim-7033,vsim-8630,3009,3389 tb_clk_mod 
+# Start time: 14:03:45 on Jul 24,2024
 # //  ModelSim - Lattice FPGA Edition 2023.3 Jul 18 2023
 # //
 # //  Copyright 1991-2023 Mentor Graphics Corporation
@@ -19,11 +20,9 @@
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.tb_agc_mod(behavioral)
 # Loading ieee.std_logic_arith(body)
 # Loading ieee.std_logic_unsigned(body)
-# Loading work.agc_mod(behavioral)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_clk_mod(behavioral)
+# Loading work.clk_mod(behavioral)
 # .main_pane.wave.interior.cs.body.pw.wf
-# End time: 08:35:24 on Jul 24,2024, Elapsed time: 0:00:49
-# Errors: 0, Warnings: 2

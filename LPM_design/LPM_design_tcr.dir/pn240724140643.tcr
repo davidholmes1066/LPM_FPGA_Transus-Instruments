@@ -1,0 +1,7 @@
+#Start recording tcl command: 7/24/2024 10:00:08
+#Project Location: C:/Users/david/Documents/Github/LPM_FPGA_Transus-Instruments/LPM_design; Project name: LPM_design
+prj_open "C:/Users/david/Documents/Github/LPM_FPGA_Transus-Instruments/LPM_design/LPM_design.rdf"
+prj_add_source "C:/Users/david/Documents/Github/LPM_FPGA_Transus-Instruments/LPM_design/source/LPM_design/tb_clock_mod.vhd"
+prj_syn_sim_source -src "C:/Users/david/Documents/Github/LPM_FPGA_Transus-Instruments/LPM_design/source/LPM_design/tb_clock_mod.vhd" SimulateOnly
+prj_add_source "C:/Users/david/Documents/Github/LPM_FPGA_Transus-Instruments/LPM_design/clock_module_sim/clock_module_sim.spf"
+#Stop recording: 7/24/2024 14:06:43

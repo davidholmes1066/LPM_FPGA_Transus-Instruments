@@ -1,0 +1,11 @@
+#Start recording tcl command: 7/23/2024 10:43:28
+#Project Location: C:/Users/david/Documents/Github/LPM_FPGA_Transus-Instruments/LPM_design; Project name: LPM_design
+prj_open "C:/Users/david/Documents/Github/LPM_FPGA_Transus-Instruments/LPM_design/LPM_design.rdf"
+prj_add_source "C:/Users/david/Documents/Github/LPM_FPGA_Transus-Instruments/LPM_design/source/LPM_design/tb_AGC_mod.vhd"
+prj_syn_sim_source -src "C:/Users/david/Documents/Github/LPM_FPGA_Transus-Instruments/LPM_design/source/LPM_design/tb_AGC_mod.vhd" SimulateOnly
+prj_add_source "C:/Users/david/Documents/Github/LPM_FPGA_Transus-Instruments/LPM_design/LPM/LPM.spf"
+prj_add_source "C:/Users/david/Documents/Github/LPM_FPGA_Transus-Instruments/LPM_design/LPM/LPM.spf"
+launch_programmer_prj "C:/lscc/radiant/2023.2"
+prj_add_source "C:/Users/david/Documents/Github/LPM_FPGA_Transus-Instruments/LPM_design/LPM/LPM.spf"
+prj_add_source "C:/Users/david/Documents/Github/LPM_FPGA_Transus-Instruments/LPM_design/source/LPM_design/clock_mod.vhd"
+#Stop recording: 7/23/2024 16:32:54
