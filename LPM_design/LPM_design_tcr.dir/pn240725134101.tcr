@@ -1,0 +1,8 @@
+#Start recording tcl command: 7/25/2024 10:03:03
+#Project Location: C:/Users/david/Documents/Github/LPM_FPGA_Transus-Instruments/LPM_design; Project name: LPM_design
+prj_open "C:/Users/david/Documents/Github/LPM_FPGA_Transus-Instruments/LPM_design/LPM_design.rdf"
+prj_add_source "C:/Users/david/Documents/Github/LPM_FPGA_Transus-Instruments/LPM_design/source/LPM_design/TX_mod.vhd"
+prj_add_source "C:/Users/david/Documents/Github/LPM_FPGA_Transus-Instruments/LPM_design/source/LPM_design/tb_TX_mod.vhd"
+prj_syn_sim_source -src "C:/Users/david/Documents/Github/LPM_FPGA_Transus-Instruments/LPM_design/source/LPM_design/tb_TX_mod.vhd" SimulateOnly
+prj_add_source "C:/Users/david/Documents/Github/LPM_FPGA_Transus-Instruments/LPM_design/Tx/Tx.spf"
+#Stop recording: 7/25/2024 13:41:01

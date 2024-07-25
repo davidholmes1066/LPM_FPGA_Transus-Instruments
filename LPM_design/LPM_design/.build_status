@@ -15,11 +15,11 @@
             <Task name="PARTrace" build_result="0" update_result="2" update_time="1721654855"/>
             <Task name="IOTiming" build_result="0" update_result="2" update_time="1721654855"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="0" build_time="1721821024">
-            <Task name="Synplify_Synthesis" build_result="0" update_result="2" update_time="1721821024"/>
-            <Task name="SynTrace" build_result="0" update_result="2" update_time="1721821024"/>
-            <Task name="SynVerilogSimFile" build_result="0" update_result="2" update_time="1721821024"/>
-            <Task name="LSE_Compile" build_result="0" update_result="2" update_time="1721821024"/>
+        <Milestone name="Synthesis" build_result="0" build_time="1721907242">
+            <Task name="Synplify_Synthesis" build_result="0" update_result="2" update_time="1721907242"/>
+            <Task name="SynTrace" build_result="0" update_result="2" update_time="1721907242"/>
+            <Task name="SynVerilogSimFile" build_result="0" update_result="2" update_time="1721907242"/>
+            <Task name="LSE_Compile" build_result="0" update_result="2" update_time="1721907242"/>
         </Milestone>
         <Report name="LPM_design_LPM_design_syn.udb" last_build_time="1721720774" last_build_size="3130"/>
     </Strategy>

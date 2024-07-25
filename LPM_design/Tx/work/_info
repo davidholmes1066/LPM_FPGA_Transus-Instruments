@@ -1,0 +1,101 @@
+m255
+K4
+z2
+!s11e vcom 2023.3 2023.07, Jul 18 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/david/Documents/Github/LPM_FPGA_Transus-Instruments/LPM_design/Tx
+Etb_tx_mod
+Z1 w1721911805
+Z2 DPx4 ieee 11 numeric_std 0 22 F8@]:i<mFK7<TjIzKcTGi0
+Z3 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
+Z4 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
+!i122 13
+R0
+Z5 8C:/Users/david/Documents/Github/LPM_FPGA_Transus-Instruments/LPM_design/source/LPM_design/tb_TX_mod.vhd
+Z6 FC:/Users/david/Documents/Github/LPM_FPGA_Transus-Instruments/LPM_design/source/LPM_design/tb_TX_mod.vhd
+l0
+L5 1
+Vg0ZmQLNoQMH0C=kUSc=Gz3
+!s100 zgfL5fLB4150WA<^GLGVJ1
+Z7 OT;C;2023.3;77
+32
+Z8 !s110 1721911850
+!i10b 1
+Z9 !s108 1721911850.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/david/Documents/Github/LPM_FPGA_Transus-Instruments/LPM_design/source/LPM_design/tb_TX_mod.vhd|
+Z11 !s107 C:/Users/david/Documents/Github/LPM_FPGA_Transus-Instruments/LPM_design/source/LPM_design/tb_TX_mod.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit -O0
+Z13 tExplicit 1 CvgOpt 0
+Atestbench
+R2
+R3
+R4
+Z14 DEx4 work 9 tb_tx_mod 0 22 g0ZmQLNoQMH0C=kUSc=Gz3
+!i122 13
+l39
+Z15 L8 85
+VKgnIRz:[XhM[Wo1R=?T3d2
+!s100 eOV`MjXBToN6CPHBT<[zW0
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Etx_mod
+Z16 w1721911384
+R2
+Z17 DPx4 ieee 15 std_logic_arith 0 22 B[jVX6I8iRX2o6WYW0BB>3
+Z18 DPx4 ieee 18 std_logic_unsigned 0 22 o4hn5gYc0WVo72BSL@Ta50
+R3
+R4
+!i122 12
+R0
+Z19 8C:/Users/david/Documents/Github/LPM_FPGA_Transus-Instruments/LPM_design/source/LPM_design/TX_mod.vhd
+Z20 FC:/Users/david/Documents/Github/LPM_FPGA_Transus-Instruments/LPM_design/source/LPM_design/TX_mod.vhd
+l0
+L7 1
+V`LY=NMFPmil];ANTdX:VI2
+!s100 8L6<ElaI>n5fjZo1S77hD2
+R7
+32
+Z21 !s110 1721911409
+!i10b 1
+Z22 !s108 1721911409.000000
+Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/david/Documents/Github/LPM_FPGA_Transus-Instruments/LPM_design/source/LPM_design/TX_mod.vhd|
+Z24 !s107 C:/Users/david/Documents/Github/LPM_FPGA_Transus-Instruments/LPM_design/source/LPM_design/TX_mod.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R2
+R17
+R18
+R3
+R4
+DEx4 work 6 tx_mod 0 22 `LY=NMFPmil];ANTdX:VI2
+!i122 12
+l35
+L24 57
+VCT0V^VaRNzU6AV:^ngzcT2
+!s100 ljZi]UC6@M:g0Qm6P34Ia0
+R7
+32
+R21
+!i10b 1
+R22
+R23
+R24
+!i113 1
+R12
+R13
