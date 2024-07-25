@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RadiantProject version="4.2" radiant="2023.2.1.288.0" title="LPM_design" device="iCE40UP5K-SG48I" performance_grade="High-Performance_1.2V" default_implementation="LPM_design">
+    <Options/>
+    <Implementation title="LPM_design" dir="LPM_design" description="LPM_design" synthesis="synplify" default_strategy="Strategy1">
+        <Options def_top="clk_mod"/>
+        <Source name="source/LPM_design/AGC_mod.vhd" type="VHDL" type_short="VHDL">
+            <Options top_module="AGC_mod"/>
+        </Source>
+        <Source name="source/LPM_design/tb_AGC_mod.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="source/LPM_design/clock_mod.vhd" type="VHDL" type_short="VHDL">
+            <Options top_module="clk_mod"/>
+        </Source>
+        <Source name="source/LPM_design/tb_clock_mod.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="clock_module_sim/clock_module_sim.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="LPM/LPM.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="source/LPM_design.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="LPM_design1.sty"/>
+</RadiantProject>
