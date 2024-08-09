@@ -23,7 +23,7 @@ set ::bali::simulation::Para(UDOLIST) {}
 set ::bali::simulation::Para(ADDTOPLEVELSIGNALSTOWAVEFORM)  {1}
 set ::bali::simulation::Para(RUNSIMULATION)  {1}
 set ::bali::simulation::Para(SIMULATIONTIME)  {100}
-set ::bali::simulation::Para(SIMULATIONTIMEUNIT)  {us}
+set ::bali::simulation::Para(SIMULATIONTIMEUNIT)  {ns}
 set ::bali::simulation::Para(SIMULATION_RESOLUTION)  {default}
 set ::bali::simulation::Para(ISRTL)  {1}
 set ::bali::simulation::Para(HDLPARAMETERS) {}

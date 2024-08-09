@@ -15,4 +15,4 @@ if {![file exists "C:/Users/david/Documents/Github/LPM_FPGA_Transus-Instruments/
 vsim -L work -L pmi_work -L ovi_ice40up  -suppress vsim-7033,vsim-8630,3009,3389 tb_TX_mod 
 view wave
 add wave /*
-run 100 us
+run 100 ns

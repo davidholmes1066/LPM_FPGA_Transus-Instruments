@@ -12,7 +12,7 @@ architecture testbench of tb_TX_mod is
         port (
             adc_clk_i: in std_logic;
             rst_i: in std_logic;
-            Ordr_i: in std_logic_vector(3 downto 0);
+            Code_L_i: in std_logic_vector(15 downto 0);
             Mask_i: in std_logic_vector(15 downto 0);
             Seed_i: in std_logic_vector(15 downto 0);
             trig_i: in std_logic;
@@ -25,7 +25,7 @@ architecture testbench of tb_TX_mod is
     -- Signals
     signal adc_clk_i: std_logic := '0';
     signal rst_i: std_logic := '0';
-    signal Ordr_i: std_logic_vector(3 downto 0) := (others => '0');
+    signal Code_L_i: std_logic_vector(15 downto 0);
     signal Mask_i: std_logic_vector(15 downto 0) := (others => '0');
     signal Seed_i: std_logic_vector(15 downto 0) := (others => '0');
     signal trig_i: std_logic := '0';
@@ -43,7 +43,7 @@ begin
         port map (
             adc_clk_i => adc_clk_i,
             rst_i => rst_i,
-            Ordr_i => Ordr_i,
+            Code_L_i => Code_L_i,
             Mask_i => Mask_i,
             Seed_i => Seed_i,
             trig_i => trig_i,
@@ -68,9 +68,9 @@ begin
     begin
         -- Initialize Inputs
         rst_i <= '1';
-        Ordr_i <= x"4"; 	-- Order of the LFSR
-        Mask_i <= x"000C"; -- Mask input
-        Seed_i <= x"000F"; -- Seed input
+        Code_L_i <= X"000E"; 	-- Code length in bits
+        Mask_i <= x"0009"; 	-- Mask input
+        Seed_i <= x"0001"; 	-- Seed input
         trig_i <= '0';
         wait for 20 ns;
         

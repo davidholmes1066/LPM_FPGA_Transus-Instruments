@@ -1,4 +1,4 @@
-library ieee;
+ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 use ieee.numeric_std.all;
@@ -8,7 +8,7 @@ entity TX_mod is
 			--INPUTS
 	port (	adc_clk_i: in std_logic;
 			rst_i: in std_logic;
-			Ordr_i: std_logic_vector(3 downto 0);
+			Code_L_i: std_logic_vector(15 downto 0);
 			Mask_i: in std_logic_vector(15 downto 0);
 			Seed_i: in std_logic_vector(15 downto 0);
 			trig_i: in std_logic;
@@ -27,7 +27,8 @@ architecture Behavioral of TX_mod is
 signal LFSR_reg: std_logic_vector(15 downto 0);
 signal Mask: std_logic_vector(15 downto 0);
 signal Seed: std_logic_vector(15 downto 0);
-signal Ordr: integer;
+signal Code_L: std_logic_vector(15 downto 0);
+signal Code_CNT: std_logic_vector(15 downto 0);
 
 type t_state is (S_IDLE, S_TX, S_WAIT);
 signal state: t_state;
@@ -44,30 +45,38 @@ P_LFSR: process(rst_i, adc_clk_i) begin
 		--RESET
 		state <= S_IDLE;
 		--LATCH IN INPUTS
-		Mask <= ("0" & Mask_i(15 downto 1));
+		Mask <= Mask_i;
 		Seed <= Seed_i;
-		Ordr <= to_integer(unsigned(Ordr_i));
+		Code_L <= Code_L_i;
 	elsif rising_edge(adc_clk_i) then
 		case state is
 			
 			--RESET/ IDLE CONDITION
 			when S_IDLE =>
 				LFSR_reg <= Seed;
+				Code_CNT <= (others => '0');
 				if trig_i = '1' then
 					state <= S_TX;
 				end if;
 			
-			--HANDLE LFSR
+			
 			when S_TX =>
-				if LFSR_reg(0) = '1' then
-					LFSR_reg((Ordr - 1) downto 0) <= (LFSR_reg(0) & LFSR_reg((ordr - 1) downto 1)) xor Mask(Ordr - 1 downto 0);
+				if Code_CNT = Code_L then
+					state <= S_WAIT;
 				else
-					LFSR_reg((Ordr - 1) downto 0) <= (LFSR_reg(0) & LFSR_reg((ordr - 1) downto 1));
+					Code_CNT <= Code_CNT + 1;	--INCREMENT COUNT BY ONE
+					--HANDLE (GALOIS) LFSR
+					for i in 0 to 14 loop
+						LFSR_reg(i) <= lFSR_reg(i + 1) xor (Mask(i) and LFSR_reg(0));
+					end loop;
+						LFSR_reg(15) <= mask(15) and LFSR_reg(0);
 				end if;
 			
 			--WAIT FOR TRIG TO RESET
 			when S_WAIT =>
-				state <= S_IDLE; --DEBUG
+				if trig_i = '0' then
+					state <= S_IDLE;
+				end if;
 			
 			--HANDLE UNKNOWN VALUE
 			when others =>

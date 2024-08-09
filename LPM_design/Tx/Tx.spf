@@ -1,9 +1,9 @@
-<RadiantSimulationProject path="." version="2.0" language="1" name="Tx" simType="ModelSim" stage="0">
-    <Source path="source/LPM_design/TX_mod.vhd" langstandard="" worklib="work" type="VHDL" include="none"/>
-    <Source path="source/LPM_design/tb_TX_mod.vhd" langstandard="" worklib="work" type="VHDL" include="none"/>
+<RadiantSimulationProject simType="ModelSim" name="Tx" version="2.0" language="1" path="." stage="0">
+    <Source langstandard="" include="none" type="VHDL" path="source/LPM_design/TX_mod.vhd" worklib="work"/>
+    <Source langstandard="" include="none" type="VHDL" path="source/LPM_design/tb_TX_mod.vhd" worklib="work"/>
     <SimLib value="pmi_work ovi_ice40up"/>
     <GlbInc value=""/>
     <Macro value=""/>
     <Udo value=""/>
-    <TopModule instance="" language="VHDL" name="tb_TX_mod"/>
+    <TopModule name="tb_TX_mod" instance="" language="VHDL"/>
 </RadiantSimulationProject>
